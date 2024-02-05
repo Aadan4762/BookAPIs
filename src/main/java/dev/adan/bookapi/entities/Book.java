@@ -38,6 +38,6 @@ public class Book {
     private Integer releaseYear;
 
     @Column(nullable = false)
-    @NotBlank(message = "Please provide movie's poster name!")
+    @NotBlank(message = "Please provide books poster name!")
     private String poster;
 }
