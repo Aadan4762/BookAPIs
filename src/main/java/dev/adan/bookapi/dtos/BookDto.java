@@ -14,13 +14,13 @@ public class BookDto {
 
     private Integer bookId;
 
-    @NotBlank(message = "Please provide movie title!")
+    @NotBlank(message = "Please provide book title!")
     private String title;
 
-    @NotBlank(message = "Please provide movie's director name!")
+    @NotBlank(message = "Please provide book director name!")
     private String director;
 
-    @NotBlank(message = "Please provide movie's studio name!")
+    @NotBlank(message = "Please provide book studio name!")
     private String studio;
 
     private Set<String> bookCast;
