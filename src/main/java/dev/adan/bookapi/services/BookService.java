@@ -11,13 +11,13 @@ public interface BookService {
 
     BookDto addBook(BookDto bookDto, MultipartFile file) throws IOException;
 
-    BookDto getBook(Integer movieId);
+    BookDto getBook(Integer bookId);
 
     List<BookDto> getAllBook();
 
-    BookDto updateBook(Integer movieId, BookDto bookDto, MultipartFile file) throws IOException;
+    BookDto updateBook(Integer bookId, BookDto bookDto, MultipartFile file) throws IOException;
 
-    String deleteBook(Integer movieId) throws IOException;
+    String deleteBook(Integer bookId) throws IOException;
 
     BookPageResponse getAllBooksWithPagination(Integer pageNumber, Integer pageSize);
 
