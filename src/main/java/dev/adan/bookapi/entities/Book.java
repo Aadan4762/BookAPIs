@@ -6,6 +6,7 @@ import lombok.*;
 
 import java.util.Set;
 
+//lets implement all logic here also
 @Entity
 @Table(name = "books")
 @NoArgsConstructor
@@ -27,9 +28,10 @@ public class Book {
     private String director;
 
     @Column(nullable = false)
-    @NotBlank(message = "Please provide books studio name!")
-    private String studio;
+    @NotBlank(message = "Please provide books publisher name!")
+    private String publisher;
 
+    //this is not field/parameter/variable but it is collection of strings which takes bookId as foreign key and different table called book_cast is created
     @ElementCollection
     @CollectionTable(name = "book_cast")
     private Set<String> bookCast;

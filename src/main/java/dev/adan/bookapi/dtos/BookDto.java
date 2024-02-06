@@ -20,8 +20,8 @@ public class BookDto {
     @NotBlank(message = "Please provide book director name!")
     private String director;
 
-    @NotBlank(message = "Please provide book studio name!")
-    private String studio;
+    @NotBlank(message = "Please provide book publisher name!")
+    private String publisher;
 
     private Set<String> bookCast;
 
