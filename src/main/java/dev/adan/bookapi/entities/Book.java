@@ -6,7 +6,6 @@ import lombok.*;
 
 import java.util.Set;
 
-//lets implement all logic here also
 @Entity
 @Table(name = "books")
 @NoArgsConstructor

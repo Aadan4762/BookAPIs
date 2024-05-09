@@ -7,4 +7,6 @@ public record BookPageResponse(List<BookDto> bookDtos,
                                int pageSize,
                                long totalElements,
                                int totalPages,
-                               boolean isLastPage) {}
+                               boolean isLastPage) {
+
+}
